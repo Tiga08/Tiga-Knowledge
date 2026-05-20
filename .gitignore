@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+
+# Local tool settings
+/.claude/settings.local.json
+
+# Exported documents
+*.docx
+*.pdf
+
+# Local working notes and generated plans
+agent-plan/*
+!agent-plan/README.md
+Todo/*
+!Todo/README.md
