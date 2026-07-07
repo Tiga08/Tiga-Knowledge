@@ -1,15 +1,7 @@
 # 07-courses
 
-课程学习记录。
+课程学习记录，每门课程一个目录，命名 `course-name/`。
 
-## 子目录
+## 推荐分类（按需创建）
 
-| 目录 | 说明 |
-|------|------|
-| `university/` | 大学公开课 |
-| `youtube/` | YouTube 课程 |
-| `bilibili/` | Bilibili 课程 |
-| `coursera/` | Coursera 课程 |
-| `fast-ai/` | fast.ai 课程 |
-| `official-docs/` | 官方文档学习记录 |
-| `workshops/` | 训练营、Workshop、专题课程 |
+`university` · `youtube` · `bilibili` · `coursera` · `fast-ai` · `official-docs` · `workshops`

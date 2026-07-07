@@ -23,7 +23,7 @@ Knowledge repo · Markdown · macOS · single-user · no build system
 | `91-templates/` | General-purpose note templates |
 | `92-references/` | External resource index |
 | `99-archive/` | Archived low-frequency content |
-| `agent-plan/` | Agent-generated plans and reports |
+| `agent-plan/` | Agent-generated plans and reports (local-only, gitignored) |
 
 ## Commands
 
@@ -53,7 +53,7 @@ find . -name "*.md" -mtime -7 -not -path './node_modules/*'
 
 ## Knowledge Note Standards
 
-- Each numbered directory contains a `README.md` describing its scope and sub-directory layout.
+- Each numbered directory contains a `README.md` describing its scope and recommended taxonomy.
 - Paper notes follow the per-paper directory structure defined in `05-papers/`.
 - Technical conclusions must distinguish facts, speculation, and experience-based judgment.
 - Code snippets must specify language, purpose, and applicable conditions.
@@ -64,6 +64,7 @@ find . -name "*.md" -mtime -7 -not -path './node_modules/*'
 ### Always
 
 - Route unsorted material through `00-inbox/` before placing in domain directories.
+- Create sub-directories on demand — only when adding the first note on that topic; follow the recommended taxonomy in each numbered directory's `README.md`.
 - Remove `.gitkeep` when adding the first real file to a directory.
 - Output a change summary after reorganization operations.
 
