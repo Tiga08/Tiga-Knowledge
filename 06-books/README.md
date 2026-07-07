@@ -2,13 +2,8 @@
 
 书籍阅读笔记。
 
-## 子目录
+## 推荐分类（按需创建）
 
-| 目录 | 说明 |
-|------|------|
-| `ai-books/` | AI 相关书籍 |
-| `cs-books/` | 计算机基础书籍 |
-| `engineering-books/` | 工程实践书籍 |
-| `english-books/` | 英文书籍 |
-| `career-books/` | 职业发展书籍 |
-| `templates/` | 读书笔记模板 |
+`ai-books` · `cs-books` · `engineering-books` · `english-books` · `career-books`
+
+读书笔记模板统一放在 `91-templates/`。

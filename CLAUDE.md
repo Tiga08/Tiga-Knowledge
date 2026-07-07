@@ -6,12 +6,12 @@
 
 1. **Numbered directories (00-10):** Fixed-order prefixes keep `ls` output stable and make the scope of each domain immediately visible. Adding a new domain means picking the next number.
 2. **Inbox-first workflow:** All unsorted material enters `00-inbox/` before being triaged into a numbered domain directory. This prevents misclassification and keeps the main tree clean.
-3. **Nested sub-domains:** Directories with broad scope (e.g., `02-ai/computer-vision/`, `04-algorithms/math/`) use a second level of nesting to keep topics navigable without over-flattening.
+3. **Nested sub-domains, created on demand:** Directories with broad scope (e.g., `02-ai/computer-vision/`) use a second level of nesting to keep topics navigable, but sub-directories are only created when the first note on that topic arrives — no pre-built empty skeletons.
 4. **Content vs metadata separation:** Knowledge notes, reading records, and learning materials live here. Agent skills, workflow definitions, and prompt templates belong in `Tiga-Skills`. Environment configs belong in `Tiga-Configs`.
 
 ## Common Gotchas
 
-- **`.gitkeep` vs real files:** Empty directories use `.gitkeep` as a placeholder. When adding real content, delete the `.gitkeep` — don't leave both.
+- **`.gitkeep` vs real files:** Only empty top-level placeholder directories (`90-assets/`, `91-templates/`, `92-references/`, `99-archive/`) use `.gitkeep`. When adding real content, delete the `.gitkeep` — don't leave both. Never pre-create empty sub-directories.
 - **Content ownership boundaries:** Technical notes and learning records go here. Prompts and agent skills go in `Tiga-Skills`. Resume and interview narratives go in `Tiga-Resume`. Personal identity facts go in `Tiga-OS`.
 - **Paper notes:** Paper notes live under `05-papers/{sub-domain}/year-paper-short-name/`. Each paper gets its own directory with `README.md`, `summary.zh.md`, `notes.md`, etc. Never fabricate experimental results, formulas, or author claims.
 - **Sensitive information:** Never commit company code, internal docs, customer data, or production data. Strip tokens, IPs, account names, and client names from screenshots, logs, and configs.

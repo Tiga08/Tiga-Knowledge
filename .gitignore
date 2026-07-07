@@ -1,6 +1,9 @@
 # OS files
 .DS_Store
 
+# Tool caches
+node_modules/
+
 # Local tool settings
 /.claude/settings.local.json
 
@@ -9,7 +12,5 @@
 *.pdf
 
 # Local working notes and generated plans
-agent-plan/*
-!agent-plan/README.md
-Todo/*
-!Todo/README.md
+agent-plan/
+Todo/
